@@ -4,7 +4,7 @@ define(['app', 'authentication'], function(app) {
   app.controller('TemplateController', ['$scope', '$window', '$browser', '$document', '$location', 'authentication',
 	function($scope, $window, $browser, $document, $location, authentication) {
 
-        $scope.$root.pageTitle = { text: "not set" };
+        //$scope.$root.pageTitle = { text: "not set" };
 
 
         //============================================================

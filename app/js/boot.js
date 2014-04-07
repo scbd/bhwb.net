@@ -11,7 +11,8 @@ require.config({
         'domReady'        : '../libs/requirejs-domready/domReady',
         'jquery'          : '../libs/jquery/jquery',
         'bootstrap'       : '../libs/bootstrap/dist/js/bootstrap.min',
-        'underscore'      : '../libs/underscore/underscore'
+        'underscore'      : '../libs/underscore/underscore',
+        'async'                : '../libs/requirejs-plugins/src/async'
     },
     shim: {
         'angular'         : { 'deps': ['jquery'], 'exports': 'angular' },

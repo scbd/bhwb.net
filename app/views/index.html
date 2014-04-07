@@ -1,12 +1,211 @@
-<div>
 
-    <h1>SEED</h1>
-    
-    <p class="lead">This project is an application skeleton for typical SCBD AngularJS/RequireJS/Bootstrap web apps.</p>
+<div ng-controller='HomePageController'>
+	<div ng-include="'/app/views/partners.html'"></div>
+	
+	<div class="map-container" id="view-container">
+	  <div class="cs-map"></div> <!-- <div id="map-canvas" class="collapse in"></div> -->
+		<div class="col-lg-3 filters-container">
+			<div class="panel-group">
+				<div class="toggle-map">
+					<div class="btn-group btn-group justified" data-toggle="buttons">
+						<label id="map-view" class="btn btn-default active" data-toggle="collapse" data-target=".nav-collapse">
+							<input type="radio" name="options" id="option1"> Map View
+						</label>
+						<label id="list-view" class="btn btn-default">
+							<input type="radio" name="options" id="option2" > List View
+						</label>&nbsp;
+					<!-- </div> -->
 
-	<p>Iis igitur est difficilius satis facere, qui se Latina scripta dicunt contemnere. in quibus hoc primum est in quo admirer, cur in gravissimis rebus non delectet eos sermo patrius, cum idem fabellas Latinas ad verbum e Graecis expressas non inviti legant. quis enim tam inimicus paene nomini Romano est, qui Ennii Medeam aut Antiopam Pacuvii spernat aut reiciat, quod se isdem Euripidis fabulis delectari dicat, Latinas litteras oderit?</p>
+					<div class="input-group input-group map-search">
+						<input type="text" class="form-control input" placeholder="Search">
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">Aichi Biodiversity Target</h4>
+					</div>
+					<div class="panel-body">
+						<div class="col-lg-2">
+							<a href="#" data-toggle="tooltip" rel="tooltip" data-placement="top" data-original-title="Target 1:  
+		By 2020, at the latest, people are aware of the values of biodiversity and the steps they can take to conserve and use it sustainably."><img src="/app/images/aichi-icons/abt-01-48.png" alt="" class="img-rounded active-filter"/></a>
+							<a href="#" data-toggle="tooltip" rel="tooltip" data-placement="top" data-original-title="Target 1:  
+		By 2020, at the latest, people are aware of the values of biodiversity and the steps they can take to conserve and use it sustainably."><img src="/app/images/aichi-icons/abt-02-48.png" alt="" class="img-rounded"/></a>
+							<a href="#" data-toggle="tooltip" rel="tooltip" data-placement="top" data-original-title="Target 1:  
+		By 2020, at the latest, people are aware of the values of biodiversity and the steps they can take to conserve and use it sustainably."><img src="/app/images/aichi-icons/abt-03-48.png" alt="" class="img-rounded active-filter"/></a>
+							<a href="#" data-toggle="tooltip" rel="tooltip" data-placement="top" data-original-title="Target 1:  
+		By 2020, at the latest, people are aware of the values of biodiversity and the steps they can take to conserve and use it sustainably."><img src="/app/images/aichi-icons/abt-04-48.png" alt="" class="img-rounded active-filter"/></a>
+						</div>
+						<div class="col-lg-2">
+							<img src="/app/images/aichi-icons/abt-05-48.png" alt="" class="img-rounded"/>
+							<img src="/app/images/aichi-icons/abt-06-48.png" alt="" class="img-rounded"/>
+							<img src="/app/images/aichi-icons/abt-07-48.png" alt="" class="img-rounded"/>
+							<img src="/app/images/aichi-icons/abt-08-48.png" alt="" class="img-rounded"/>
+							<img src="/app/images/aichi-icons/abt-09-48.png" alt="" class="img-rounded active-filter"/>
+							<img src="/app/images/aichi-icons/abt-10-48.png" alt="" class="img-rounded"/>
+							</div>
+						<div class="col-lg-2">
+							<img src="/app/images/aichi-icons/abt-11-48.png" alt="" class="img-rounded active-filter"/>
+							<img src="/app/images/aichi-icons/abt-12-48.png" alt="" class="img-rounded"/>
+							<img src="/app/images/aichi-icons/abt-13-48.png" alt="" class="img-rounded active-filter"/>
+							</div>
+						<div class="col-lg-2">
+							<img src="/app/images/aichi-icons/abt-14-48.png" alt="" class="img-rounded active-filter"/>
+							<img src="/app/images/aichi-icons/abt-15-48.png" alt="" class="img-rounded active-filter"/>
+							<img src="/app/images/aichi-icons/abt-16-48.png" alt="" class="img-rounded"/>
+						</div>
+						<div class="col-lg-2">
+							<img src="/app/images/aichi-icons/abt-17-48.png" alt="" class="img-rounded"/>
+							<img src="/app/images/aichi-icons/abt-18-48.png" alt="" class="img-rounded"/>
+							<img src="/app/images/aichi-icons/abt-19-48.png" alt="" class="img-rounded"/>
+							<img src="/app/images/aichi-icons/abt-20-48.png" alt="" class="img-rounded"/>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">Millenium Development Goals</h4>
+					</div>
+					<div class="panel-body mdg-img">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Select All
+							</label>
+						</div>
+						<img src="/app/images/mdg/1.jpg" alt="" class="img-rounded active-filter">
+						<img src="/app/images/mdg/2.jpg" alt="" class="img-rounded active-filter">
+						<img src="/app/images/mdg/3.jpg" alt="" class="img-rounded">
+						<img src="/app/images/mdg/4.jpg" alt="" class="img-rounded">
+						<img src="/app/images/mdg/5.jpg" alt="" class="img-rounded">
+						<img src="/app/images/mdg/6.jpg" alt="" class="img-rounded active-filter">
+						<img src="/app/images/mdg/7.jpg" alt="" class="img-rounded active-filter">
+						<img src="/app/images/mdg/8.jpg" alt="" class="img-rounded active-filter">
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">Benefits</h4>
+					</div>
+					<div class="panel-body benefits-img">
+						<img src="/app/images/benefits-icons/b1.png" alt="" class="img-rounded">
+						<img src="/app/images/benefits-icons/b2.png" alt="" class="img-rounded">
+						<img src="/app/images/benefits-icons/b3.png" alt="" class="img-rounded">
+						<img src="/app/images/benefits-icons/b4.png" alt="" class="img-rounded active-filter">
+						<img src="/app/images/benefits-icons/b5.png" alt="" class="img-rounded">
+						<img src="/app/images/benefits-icons/b6.png" alt="" class="img-rounded">
+						<img src="/app/images/benefits-icons/b7.png" alt="" class="img-rounded active-filter">
+						<img src="/app/images/benefits-icons/b8.png" alt="" class="img-rounded active-filter">
+						<img src="/app/images/benefits-icons/b9.png" alt="" class="img-rounded active-filter">
+						<img src="/app/images/benefits-icons/b10.png" alt="" class="img-rounded">
+						<img src="/app/images/benefits-icons/b11.png" alt="" class="img-rounded">
+						<img src="/app/images/benefits-icons/b12.png" alt="" class="img-rounded">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="list-view-container" class="container collapse">	
+			<div class="list col-lg-8">
+				<h2>Case Studies</h2>
+				<ul class="media-list">
+					<li class="media">
+						<a class="pull-left" href="#">
+							<img class="media-object" src="/app/images/1.jpg" alt="Kagwene Gorilla Sanctuary">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Kagwene Gorilla Sanctuary</h4>
+							<p>The Kagwene Gorilla Sanctuary is currently being created at the eastern edge of the territory. Here, landscape mosaic would make it possible to consider different types of uses. It is currently being created at the eastern edge of the territory.</p> 
+							<div class="filters">
+								<img src="/app/images/mdg/1.jpg" alt="" class="img-rounded active-filter">
+								<img src="/app/images/mdg/2.jpg" alt="" class="img-rounded active-filter">
+								<img src="/app/images/mdg/3.jpg" alt="" class="img-rounded">
+								<img src="/app/images/mdg/4.jpg" alt="" class="img-rounded">
+							</div>
+						</div>
+						 <div class="pull-right read-more"><a href="#">more >></a></div>
+					</li>
+					<li class="media">
+						<a class="pull-left" href="#">
+							<img class="media-object" src="/app/images/1.jpg" alt="Kagwene Gorilla Sanctuary">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Kagwene Gorilla Sanctuary</h4>
+							<p>The Kagwene Gorilla Sanctuary is currently being created at the eastern edge of the territory. Here, landscape mosaic would make it possible to consider different types of uses. It is currently being created at the eastern edge of the territory.</p>
+							<div class="filters">
+								<img src="/app/images/aichi-icons/abt-02-48.png" alt="" class="img-rounded">
+								<img src="/app/images/aichi-icons/abt-03-48.png" alt="" class="img-rounded active-filter">
+								<img src="/app/images/aichi-icons/abt-04-48.png" alt="" class="img-rounded active-filter">
+								<img src="/app/images/aichi-icons/abt-05-48.png" alt="" class="img-rounded">
+								<img src="/app/images/aichi-icons/abt-06-48.png" alt="" class="img-rounded">
+							</div>
+						</div>
+						 <div class="pull-right read-more"><a href="#">more >></a></div>
+					</li>
+					<li class="media">
+						<a class="pull-left" href="#">
+							<img class="media-object" src="/app/images/1.jpg" alt="Kagwene Gorilla Sanctuary">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Kagwene Gorilla Sanctuary</h4>
+							<p>The Kagwene Gorilla Sanctuary is currently being created at the eastern edge of the territory. Here, landscape mosaic would make it possible to consider different types of uses. It is currently being created at the eastern edge of the territory.</p>
+						<div class="filters">
+							<img src="/app/images/benefits-icons/b4.png" alt="" class="img-rounded active-filter">
+							<img src="/app/images/benefits-icons/b5.png" alt="" class="img-rounded">
+							<img src="/app/images/benefits-icons/b6.png" alt="" class="img-rounded">
+							<img src="/app/images/benefits-icons/b7.png" alt="" class="img-rounded active-filter">
+							<img src="/app/images/benefits-icons/b8.png" alt="" class="img-rounded active-filter">
+							<img src="/app/images/benefits-icons/b9.png" alt="" class="img-rounded active-filter">
+						</div>							
+						</div>
+						 <div class="pull-right read-more"><a href="#">more >></a></div>
+					</li>
+					<li class="media">
+						<a class="pull-left" href="#">
+							<img class="media-object" src="/app/images/1.jpg" alt="Kagwene Gorilla Sanctuary">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Kagwene Gorilla Sanctuary</h4>
+							<p>The Kagwene Gorilla Sanctuary is currently being created at the eastern edge of the territory. Here, landscape mosaic would make it possible to consider different types of uses. It is currently being created at the eastern edge of the territory.</p> 
+							<div class="filters">
+								<img src="/app/images/mdg/1.jpg" alt="" class="img-rounded active-filter">
+								<img src="/app/images/mdg/2.jpg" alt="" class="img-rounded active-filter">
+								<img src="/app/images/mdg/3.jpg" alt="" class="img-rounded">
+								<img src="/app/images/mdg/4.jpg" alt="" class="img-rounded">
+							</div>
+						</div>
+						 <div class="pull-right read-more"><a href="#">more >></a></div>
+					</li>
+					<li class="media">
+						<a class="pull-left" href="#">
+							<img class="media-object" src="/app/images/1.jpg" alt="Kagwene Gorilla Sanctuary">
+						</a>
+						<div class="media-body">
+							<h4 class="media-heading">Kagwene Gorilla Sanctuary</h4>
+							<p>The Kagwene Gorilla Sanctuary is currently being created at the eastern edge of the territory. Here, landscape mosaic would make it possible to consider different types of uses. It is currently being created at the eastern edge of the territory.</p>
+						<div class="filters">
+							<img src="/app/images/benefits-icons/b4.png" alt="" class="img-rounded active-filter">
+							<img src="/app/images/benefits-icons/b5.png" alt="" class="img-rounded">
+							<img src="/app/images/benefits-icons/b6.png" alt="" class="img-rounded">
+							<img src="/app/images/benefits-icons/b7.png" alt="" class="img-rounded active-filter">
+							<img src="/app/images/benefits-icons/b8.png" alt="" class="img-rounded active-filter">
+							<img src="/app/images/benefits-icons/b9.png" alt="" class="img-rounded active-filter">
+						</div>						
+						</div>
+						 <div class="pull-right read-more"><a href="#">more >></a></div>
+					</li>
+				</ul>
+				<div class="pagination-centered">
+					<ul class="pagination">
+						<li><a href="#">&laquo;</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">&raquo;</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 
-	<p>Tantum autem cuique tribuendum, primum quantum ipse efficere possis, deinde etiam quantum ille quem diligas atque adiuves, sustinere. Non enim neque tu possis, quamvis excellas, omnes tuos ad honores amplissimos perducere, ut Scipio P. Rupilium potuit consulem efficere, fratrem eius L. non potuit. Quod si etiam possis quidvis deferre ad alterum, videndum est tamen, quid ille possit sustinere.</p>
 
-	<p>Tempore quo primis auspiciis in mundanum fulgorem surgeret victura dum erunt homines Roma, ut augeretur sublimibus incrementis, foedere pacis aeternae Virtus convenit atque Fortuna plerumque dissidentes, quarum si altera defuisset, ad perfectam non venerat summitatem.</p>
 </div>

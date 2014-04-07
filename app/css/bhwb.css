@@ -1,0 +1,314 @@
+/* Fixed Top css */
+
+body {
+  xmin-height: 2000px;
+  xpadding-top: 70px;
+}
+
+
+/* Didier Styling */
+body {
+	
+}
+
+.header {
+	background: url(../images/header-bkg.jpg) no-repeat center top fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin-bottom: 0px;
+}
+.navbar-default {
+background: transparent url(../images/nav-bar-bkg-30.png);
+xbackground-color: #fff;
+border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+color: #444;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
+	background:transparent url(../images/nav-bar-bkg-30.png); 
+}
+
+
+.container .jumbotron {
+	padding:0;
+	background:none;
+	margin-bottom: 10px;
+}
+.jumbotron h1 {
+	font-family: 'Montserrat', sans-serif;
+	max-width:400px;
+	font-size:34px;
+	font-weight:700;
+	color:white;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}	
+
+.jumbotron h2 {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size:18px;
+	color:white;
+	margin:0
+}
+
+header .navbar-collapse {
+padding:0;
+}
+
+.jumbotron .btn {
+	margin-top:10px;
+}
+
+.clear-right {
+clear:right;
+}
+
+ul.thumbnails {
+	list-style:none;
+	margin:0;
+}
+
+.thumbnail {
+    width: 260px;
+    xheight: 180px;
+    overflow: hidden; /* contain images within thumbnail boundaries */
+    border: 0; /* removes Bootstrap's default border */
+    box-shadow: 0 12px 12px -10px #c4c4c4;
+    -webkit-box-shadow: 0 17px 22px -20px #c4c4c4;
+    -moz-box-shadow: 0 12px 12px -10px #c4c4c4;
+}
+.thumbnail img { width:100%; height:auto; } /* to keep proportions */
+.thumbnails p { text-align: center; padding: 10px; } /* captions can be styled with an inline element */
+
+.carousel {
+	margin-bottom:0px;
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next {
+	color:#444;
+}
+
+.carousel-control {
+	width:5%;
+	background:none;
+}
+
+.carousel-control.left, .carousel-control.right {
+	background:none;
+}
+	
+
+.carousel-inner {
+	width: 96%;
+	margin-left: .5%;
+}
+.map-container {
+  position:relative;
+  min-height:900px;
+  width:100%;
+  margin-top:0px;
+}
+
+.filters-container {
+  position:absolute;
+  top:25px;
+  right:25px;
+}
+
+.display-container {
+	  position:absolute;
+		top:25px;
+		left:65px;
+}
+
+#map-canvas {
+  margin: 0;
+  padding: 0;
+  height: 900px !important;
+  width:100%
+}
+.toggle-map {
+	margin-bottom:10px;
+}
+
+.map-search {
+	display:inline-block;
+	margin-right:20px;
+	border-radius:6px !important;
+}
+
+.map-search .input-lg {
+	border-radius:6px !important;
+}
+
+.footer {
+    bottom:0px;
+    margin-top: 20px;
+    background: #f5f5f5;
+    xposition:absolute;
+
+}
+.footer, .footer .navbar-default {
+    background: #f5f5f5;
+    xpadding-top:20px;
+	}
+
+.footer .navbar-default { 
+	margin-bottom:0;
+	}
+
+
+.footer .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #000;
+}
+
+.list {
+  xpadding-top: 15px;
+}
+
+.pagination {}
+.pagination-centered {
+  text-align: center;
+}
+
+.list .media img {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.benefits-img img, .mdg-img img {
+  width:48px;
+  height:48px;
+  margin-bottom:5px;
+
+}
+.filter-headers h3 {
+  color:#85BCD9;
+  text-align:center;
+
+}
+.filter-headers {
+
+  }
+
+.filters-container img, .filters img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscalerayscale");
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.filters-container img:hover, .filters img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+.filters-container .active-filter, .filters .active-filter  {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+.filters-container .panel-title {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+.navbar-nav > li > a {
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+}
+
+header .navbar-btn {
+margin-top: 3px;
+margin-bottom: 2px;
+padding: 1px 10px;
+line-height: 20px;
+font-size:12px;
+
+}
+header .navbar {
+min-height: 30px;
+margin-bottom: 10px;
+}
+
+.filters-container .panel-body  img, .filters img{
+	width:36px;
+	height:36px;
+}
+.filters {
+	margin-bottom:5px;
+}
+.gm-style img {
+padding: 5px;
+border: 1px solid #ccc;
+margin:0 15px 0 0;
+}
+
+.gm-style div#bodyContent {
+	margin-left: 120px
+}
+
+
+h2 {
+	color:#0073AF;
+	font-family: 'Sanchez', serif;
+	font-size:26px;
+}
+
+h3 {
+	xcolor:#0073AF;
+	font-family: 'Sanchez', serif;
+	font-size:20px;
+}
+
+#content h3 {
+	font-family: roboto;
+}
+
+
+.cs-body .main-content {
+	margin-top:20px;
+	
+}
+
+.cs-logo {
+		margin:20px 0;
+		
+}
+
+.cs-logo img {
+	width:100%
+}
+
+.photo-gallery img {
+	float:left;
+	margin: 5px 0px 5px 5px;
+}
+.photo-gallery {
+padding: 5px 5px 5px 0px;
+}
+
+
+.panel-group .panel {
+overflow:visible
+
+}
+
+.gm-style .gm-style-iw h3 a {
+	font-size:18px;
+	font-weight:normal;
+}
